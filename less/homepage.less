@@ -1,0 +1,184 @@
+.welcome {
+  padding: 0 1rem 1rem 1rem;
+  @media @tablet {
+    display: none;
+  }
+  h2 {
+    font-size: 3.5rem;
+    color: @red;
+    span {
+      color: @black;
+    }
+  }
+  p {
+    padding: 1rem 0 0;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    width: 80%;
+    &:last-child {
+      padding: 1rem 0 4rem;
+    }
+  }
+}
+.services-home {
+  .flex(@justifyContent: space-between);
+  width: 100%;
+  margin: 0 0 40px 0;
+
+  @media @tablet {
+    flex-direction: column;
+  }
+
+  .box {
+    .flex(@flexDirection: column, @alignItems: center);
+    width: 33%;
+    padding: 0 10px;
+
+    @media @tablet {
+      width: 100%;
+      margin: 0 0 50px 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 0 0 10px 0;
+      @media @tablet {
+        width: 60%;
+      }
+      @media @phone {
+        width: 80%;
+      }
+    }
+
+    h2 {
+      color: @red;
+      margin: 0 0 10px 0;
+      text-align: center;
+      @media @tablet {
+        font-size: 3rem;
+      }
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1.4rem;
+      color: @black;
+      line-height: 1.6rem;
+      margin: 0 0 10px 0;
+      text-align: center;
+
+      @media @tablet {
+        width: 75%;
+        margin: 0 0 15px 0;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+
+    .learn-more {
+      background: @secondary;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+      margin: auto 0 0 0;
+
+      &:hover {
+        text-decoration: none;
+        background: saturate(@secondary, 10%);
+      }
+
+      &:active {
+        color: @red;
+      }
+
+      @media @tablet {
+        font-size: 1.8rem;
+        padding: 10px 20px;
+      }
+      @media @phone {
+        width: 80%;
+        padding: 15px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.customer-reviews {
+  padding: 10px 10px 70px;
+
+  .section-title {
+    font-size: 3rem;
+    color: @black;
+    margin: 0 0 25px 0;
+    text-align: center;
+    @media @tablet {
+      font-size: 4rem;
+    }
+  }
+
+  .reviews {
+    .flex(@justifyContent: center);
+
+    @media @tablet {
+      flex-direction: column;
+    }
+
+    .review {
+      .flex(@justifyContent: center);
+      width: 45%;
+
+      @media @tablet {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+
+      .customer-info {
+        .flex(@flexDirection: column, @justifyContent: center);
+        width: 70%;
+        padding: 0 20px 0 15px;
+
+        h3 {
+          font-size: 1.6rem;
+          color: @red;
+          padding: 0 0 2px 0;
+          @media @tablet {
+            font-size: 2rem;
+          }
+        }
+
+        .location {
+          font-size: 1.2rem;
+          color: #777;
+          padding: 0 0 7px 0;
+          @media @tablet {
+            font-size: 1.6rem;
+          }
+        }
+
+        .comment {
+          font-size: 1.4rem;
+          font-weight: normal;
+          line-height: 1.6rem;
+          font-style: italic;
+          @media @tablet {
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+          }
+        }
+      }
+
+      img {
+        width: 132px;
+        height: 132px;
+        border-radius: 50%;
+
+        @media @tablet {
+          width: 125px;
+        }
+      }
+    }
+  }
+}

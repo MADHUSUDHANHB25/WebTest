@@ -1,0 +1,27 @@
+// This is where we keep our global variables.
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: @main-width;
+  margin: 0 auto;
+  background: @white url(../img/headline.jpg) no-repeat center;
+  background-size: @main-width 550px;
+  background-position: top;
+
+  @media @tablet {
+    width: 100%;
+  }
+
+  @media @phone {
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
